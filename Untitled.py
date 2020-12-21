@@ -8,9 +8,9 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/validacion', methods = ['POST'])
+@app.route('/validacion')
 def validacion():
-    return request.json
+    return "Hola mundo"
 
 if __name__ == '__main__':
     app.run(host='localhost')
